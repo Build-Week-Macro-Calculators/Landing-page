@@ -142,28 +142,62 @@ nav {
   }
 }
 body {
-  background: lightsalmon;
+  background-image: url("../images/beef.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 .top-content {
-  background-image: url("images\beef.jpg");
-  background: red;
   padding-bottom: 5%;
 }
 .top-content img {
   display: none;
 }
 .top-content h1 {
-  font-family: 'Bangers';
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 1px;
   margin-bottom: 15px;
   font-size: 100px;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 15%;
+  color: white;
+  text-shadow: 10px 5px 5px black;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .top-content button {
   padding: 2% 5%;
   margin: 5% auto;
   display: block;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px black;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.8;
+  transition: 0.3s;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.top-content button:hover {
+  opacity: 1;
 }
 .bottom-top {
   display: flex;
@@ -177,6 +211,7 @@ body {
 .bottom-top img {
   width: 45%;
   border-radius: 15px;
+  box-shadow: 10px 10px black;
 }
 @media (max-width: 500px) {
   .bottom-top img {
@@ -190,6 +225,19 @@ body {
   border-radius: 15px;
   width: 45%;
   margin: 5%;
+  box-shadow: 10px 10px black;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.8;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
 @media (max-width: 500px) {
   .bottom-top div {
@@ -202,6 +250,7 @@ body {
   font-weight: bold;
   padding: 2% 15%;
   margin-top: 15%;
+  opacity: 1;
 }
 @media (max-width: 500px) {
   .bottom-top div h2 {
@@ -210,6 +259,10 @@ body {
 }
 .bottom-top div p {
   padding: 2% 15%;
+  opacity: 1;
+}
+.bottom-top :hover {
+  opacity: 1;
 }
 .bottom-bottom {
   display: flex;
@@ -226,6 +279,7 @@ body {
   width: 50%;
   border-radius: 15px;
   order: -1;
+  box-shadow: 10px 10px black;
 }
 @media (max-width: 500px) {
   .bottom-bottom img {
@@ -240,6 +294,19 @@ body {
   border-radius: 15px;
   width: 45%;
   margin: 5%;
+  box-shadow: 10px 10px black;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.8;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
 @media (max-width: 500px) {
   .bottom-bottom div {
@@ -253,6 +320,7 @@ body {
   font-weight: bold;
   padding: 2% 15%;
   margin-top: 15%;
+  opacity: 1;
 }
 @media (max-width: 500px) {
   .bottom-bottom div h3 {
@@ -261,6 +329,10 @@ body {
 }
 .bottom-bottom div p {
   padding: 2% 15%;
+  opacity: 1;
+}
+.bottom-bottom :hover {
+  opacity: 1;
 }
 footer {
   color: #22283B;
@@ -271,4 +343,5 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
 }
